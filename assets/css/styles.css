@@ -295,6 +295,16 @@ img{
 .home__description{
     margin-bottom: var(--mb-2);
 }
+.home__title,
+.home__subtitle,
+.home__description{
+    text-align: center;
+}
+.home__buttons{
+    display: flex;
+    justify-content: center;
+}
+
 
 .home__scroll{
     display: none;

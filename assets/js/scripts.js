@@ -108,9 +108,7 @@ function sendMail(contactForm) {
     return false; // To block from loading a new page
 }
 
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 

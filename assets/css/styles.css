@@ -257,10 +257,11 @@ img{
     display: grid;
     grid-template-columns: max-content;
     row-gap: 1rem;
+    justify-self: end;
 }
 
 .home__social-icon{
-    font-size: 1.25rem;
+    font-size: 2rem;
     color: var(--first-color);
 }
 
@@ -275,6 +276,10 @@ img{
 
 .home__blob-img{
     width: 190px;
+}
+
+.home__img{
+    justify-self: center;
 }
 
 .home__data{

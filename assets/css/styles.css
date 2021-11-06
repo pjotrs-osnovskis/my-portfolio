@@ -346,6 +346,16 @@ img{
     background-color: var(--first-color-alt);
 }
 
+.button--white{
+    background-color: #fff;
+    color: var(--first-color);
+}
+
+.button--white:hover{
+    background-color: #fff;
+    color: var(--first-color-alt);
+}
+
 .button__icon{
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
@@ -635,7 +645,7 @@ img{
 }
 
 .swiper-horizontal > .swiper-pagination-bullets{
-    bottom: -1.25rem;
+    bottom: -1.75rem;
 }
 
 .swiper-pagination-bullet-active{
@@ -647,9 +657,34 @@ img{
 .swiper-pagination-bullet{
     outline: none;
 }
-/*==================== PROJECT IN MIND ====================*/
+/*==================== HIRE ME ====================*/
+.hire-me{
+    text-align: center;
+}
 
+.hire-me__bg{
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+}
 
+.hire-me__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.hire-me__description{
+    margin-bottom: var(--mb-1-5);
+}
+
+.hire-me__title,
+.hire-me__description{
+    color: #fff;
+}
+
+.hire-me__img{
+    width: 232px;
+    justify-self: center;
+}
 /*==================== TESTIMONIAL ====================*/
 
 

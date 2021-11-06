@@ -261,7 +261,7 @@ img{
 }
 
 .home__social-icon{
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: var(--first-color);
 }
 
@@ -270,7 +270,7 @@ img{
 }
 
 .home__blob{
-    width: 200px;
+    width: 220px;
     fill: var(--first-color);
 }
 

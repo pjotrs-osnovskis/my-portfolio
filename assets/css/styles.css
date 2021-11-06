@@ -305,7 +305,6 @@ img{
     justify-content: center;
 }
 
-
 .home__scroll{
     display: none;
 }
@@ -577,15 +576,77 @@ img{
 .qualification__button.qualification__active{
     color: var(--first-color);
 }
-/*==================== SERVICES ====================*/
-
-
-/* Active Modal */
-
 
 /*==================== PORTFOLIO ====================*/
+.portfolio__container{
+    overflow: initial;
+}
 
+.portfolio__content{
+    padding: 0 1.5rem;
+}
 
+.portfolio__img{
+    width: 256px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__data a{
+    padding: .5rem;
+    font-size: 1rem;
+    margin: 0 0.25rem;
+}
+
+.portfolio__data a i{
+    margin: 0 auto;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -.5rem;
+}
+
+.swiper-button-next{
+    right: .5rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets{
+    bottom: -1.25rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+    outline: none;
+}
 /*==================== PROJECT IN MIND ====================*/
 
 

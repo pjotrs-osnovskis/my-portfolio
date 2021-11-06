@@ -113,7 +113,7 @@ img{
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section{
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 2rem;
 }
 .section__title{
     font-size: var(--h1-font-size);
@@ -405,7 +405,7 @@ img{
 .skills__header{
     display: flex;
     align-items: center;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-2);
     cursor: pointer;
 }
 
@@ -572,6 +572,10 @@ img{
 
 .qualification__active[data-content]{
     display: block;
+}
+
+.qualification__button.qualification__active{
+    color: var(--first-color);
 }
 /*==================== SERVICES ====================*/
 

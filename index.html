@@ -605,13 +605,44 @@
                 </div>
             </div>
         </section>
+        <!-- ==================== CONTACT ME ==================== -->
+        <section class="contact section" id="contact">
 
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+            <div class="container grid">
+                <form id="contactForm" name="contactForm" onsubmit="return sendMail(this);" class="contact__form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact__content">
+                            <label for="contact_name" class="contact__label">Name</label>
+                            <input id="contact_name" type="text" class="contact__input" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="contact_email" class="contact__label">Email</label>
+                            <input id="contact_email" type="email" class="contact__input" required>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="contact_request" class="contact__label">Message</label>
+                        <textarea id="contact_request" name="contact_request" cols="0" rows="7" class="contact__input" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
 
     </main>
     <!-- FOOTER -->
 
     <!-- SCROLL TOP -->
 
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <!-- SWIPER JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- MAIN JS -->

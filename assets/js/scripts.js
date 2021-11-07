@@ -143,25 +143,66 @@ window.addEventListener('scroll', scrollUp)
 
 
 /*==================== DARK LIGHT THEME ====================*/
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'uil-sun'
+// const themeButton = document.getElementById('theme-button')
+// const darkTheme = 'dark-theme'
+// const iconTheme = 'uil-sun'
 
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+// const selectedTheme = localStorage.getItem('selected-theme')
+// const selectedIcon = localStorage.getItem('selected-icon')
 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+// const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
-if (selectedTheme){
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    themeButton.body.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+// if (selectedTheme){
+//     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+//     themeButton.body.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+// }
+
+// themeButton.addEventListener('click', () =>{
+//     document.body.classList.toggle(darkTheme)
+//     themeButton.classList.toggle(iconTheme)
+
+//     localStorage.setItem('selected-theme', getCurrentTheme())
+//     localStorage.setItem('selected-icon',getCurrentIcon())
+// })
+
+let darkMode = localStorage.getItem('darkMode');
+let darkModeIcon = localStorage.getItem('darkModeIcon')
+const darkModeToggle = document.getElementById('theme-button');
+
+// check if dark mode == true
+// if true then switch off
+// if false them switch on
+
+const enableDarkMode = () => {
+    // 1. add class dark-theme to body
+    document.body.classList.add('dark-theme');
+    darkModeToggle.classList.remove('uil-moon');
+    darkModeToggle.classList.add('uil-sun')
+    // 2. update darkMode in localStorage
+    localStorage.setItem('darkMode', 'enabled');
+};
+
+const disableDarkMode = () => {
+    // 1. remove class dark-theme from body
+    document.body.classList.remove('dark-theme');
+    darkModeToggle.classList.remove('uil-sun');
+    darkModeToggle.classList.add('uil-moon')
+
+    // 2. update darkMode in localStorage
+    localStorage.setItem('darkMode', null);
+};
+
+if (darkMode === 'enabled') {
+    enableDarkMode();
 }
 
-themeButton.addEventListener('click', () =>{
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon',getCurrentIcon())
-})
+// dark mode toggle button
+darkModeToggle.addEventListener('click', () => {
+    darkMode = localStorage.getItem('darkMode');
+    if (darkMode !== 'enabled') {
+        enableDarkMode();
+    } else{
+        disableDarkMode();
+    }
+});

@@ -1092,6 +1092,10 @@ button{
     .footer__copy{
         margin-top: 4.5rem;
     }
+
+    .footer__title{
+        font-size: var(--h2-font-size);
+    }
 }
 
 /* For large devices */

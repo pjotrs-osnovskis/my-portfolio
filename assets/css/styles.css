@@ -454,6 +454,10 @@ button{
 }
 
 /*==================== SKILLS ====================*/
+.small__text{
+    font-size: var(--small-font-size);
+}
+
 .skills__container{
     row-gap: 0;
 }

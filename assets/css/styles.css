@@ -639,8 +639,13 @@ button{
 }
 
 /*==================== PORTFOLIO ====================*/
+.swiper-wrapper{
+    align-items: center;
+}
+
 .portfolio__container{
     overflow: initial;
+    min-height: 15rem;
 }
 
 .portfolio__content{

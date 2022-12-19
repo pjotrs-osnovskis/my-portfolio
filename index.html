@@ -94,27 +94,44 @@
                     <div class="home__img">
                         <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            <defs>
+                                <linearGradient id="mask0" x1="0" x2="1" y1="1" y2="0">
+                                    <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop>
+                                    <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#mask0)"
+                                d="M18.3,-18C25.9,-15.4,35.7,-11.7,38.7,-5.2C41.8,1.3,38.2,10.6,32.9,18.2C27.6,
+                                25.8,20.6,31.7,13.4,32.6C6.1,33.5,-1.6,29.4,-7.5,25.2C-13.4,21,-17.6,16.8,-19.8,
+                                11.9C-22,7.1,-22.3,1.5,-21.8,-4.3C-21.3,-10.2,-20.1,-16.3,-16.3,-19.5C-12.6,-22.7,
+                                -6.3,-22.9,-0.5,-22.3C5.4,-21.8,10.7,-20.5,18.3,-18Z"
+                                width="100%" height="100%" transform="translate(50 75)" stroke-width="0"
+                                stroke="url(#mask0)"></path>
+                            <image class="home__blob-img" x='10' y='10' xlink:href="assets/img/me-no-bg.png" />
+
+                            <!-- <mask id="mask0" mask-type="alpha">
+                                <path d="M18.3,-18C25.9,-15.4,35.7,-11.7,38.7,-5.2C41.8,1.3,38.2,10.6,32.9,18.2C27.6,
+                                25.8,20.6,31.7,13.4,32.6C6.1,33.5,-1.6,29.4,-7.5,25.2C-13.4,21,-17.6,16.8,-19.8,
+                                11.9C-22,7.1,-22.3,1.5,-21.8,-4.3C-21.3,-10.2,-20.1,-16.3,-16.3,-19.5C-12.6,-22.7,
+                                -6.3,-22.9,-0.5,-22.3C5.4,-21.8,10.7,-20.5,18.3,-18Z" />
                             </mask>
                             <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <path d="M18.3,-18C25.9,-15.4,35.7,-11.7,38.7,-5.2C41.8,1.3,38.2,10.6,32.9,18.2C27.6,
+                                25.8,20.6,31.7,13.4,32.6C6.1,33.5,-1.6,29.4,-7.5,25.2C-13.4,21,-17.6,16.8,-19.8,
+                                11.9C-22,7.1,-22.3,1.5,-21.8,-4.3C-21.3,-10.2,-20.1,-16.3,-16.3,-19.5C-12.6,-22.7,
+                                -6.3,-22.9,-0.5,-22.3C5.4,-21.8,10.7,-20.5,18.3,-18Z" width="100%" height="100%" transform="translate(50 75)" stroke-width="0"
+                                stroke="url(#mask0)"></path>
                                 <image class="home__blob-img" x='10' y='10' xlink:href="assets/img/me-no-bg.png" />
-                            </g>
+                            </g> -->
                         </svg>
                     </div>
                     <div class="home__data">
                         <h1 class="home__title">Hey, call me Pete</h1>
                         <h3 class="home__subtitle">Jr Full Stack Web Developer</h3>
                         <p class="home__description">
-                            As of March '22, I just finished my <strong>Diploma in Full Stack Web Developer</strong> course with <a
-                                href="https://codeinstitute.net/">Code Institute</a> and will be looking for a career
+                            As of March '22, I just finished my <strong>Diploma in Full Stack Web Developer</strong>
+                            course with <a href="https://codeinstitute.net/">Code Institute</a> and will be looking for
+                            a career
                             change.
                         </p>
                         <div class="home__buttons">
@@ -408,11 +425,29 @@
                                 <span class="qualification__line"></span>
                             </div>
                             <div>
-                                <h3 class="qualification__title">Full Stack Web Developer (Django, Python)</h3>
-                                <span class="qualification__subtitle">Coleg y Cymoedd (UK)</span>
+                                <h3 class="qualification__title">CS106A Online Course</h3>
+                                <span class="qualification__subtitle">Stanford University</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2021 - 2022
+                                    2021 Jul - 2022 Feb
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- ============== QUALIFICATION 4 ============== -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Full Stack Web Developer (Django, Python)</h3>
+                                <span class="qualification__subtitle">Code Institute via Coleg y Cymoedd (UK)</span>
+                                <span class="qualification__subtitle"><a href="assets/pdf/eCertificate.pdf">e-Certificate</a></span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021 Mar - 2022 Feb
                                 </div>
                             </div>
                         </div>
@@ -451,23 +486,6 @@
                             </div>
                         </div>
 
-                        <!-- ============== QUALIFICATION 1 ============== -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Sixth Form (A-level)</h3>
-                                <span class="qualification__subtitle">Private School "Laisma" (LV)</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2002 - 2007
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- ============== QUALIFICATION CONTENT 2 ============== -->
                     <div class="qualification__content" data-content id="work">
 
@@ -479,11 +497,15 @@
                                 <span class="qualification__line"></span>
                             </div>
                             <div>
-                                <h3 class="qualification__title">Class 2 HGV Driver, Concrete Mixer Truck (32t)</h3>
-                                <span class="qualification__subtitle">Promix NW Ltd. (UK)</span>
+                                <h3 class="qualification__title">Junior Software Developer</h3>
+                                <span class="qualification__subtitle">Metriscope (UK)</span>
+                                <span class="qualification__subtitle">
+                                    Working on variety of Linux versions like Ubuntu and Centos, 
+                                    PHP backend, MySQL, JS/jQuery and more
+                                </span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2018 - Now
+                                    2022 May - now
                                 </div>
                             </div>
                         </div>
@@ -491,116 +513,16 @@
                         <!-- ============== QUALIFICATION 7 ============== -->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">General Manager</h3>
-                                <span class="qualification__subtitle"> CHIMICHANGA (UK)</span>
+                                <h3 class="qualification__title">Mysterious Experience</h3>
+                                <span class="qualification__subtitle">Of my pre-IT life...</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2015 - 2018
+                                    Management in catering and more...
                                 </div>
                             </div>
                             <div>
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!-- ============== QUALIFICATION 6 ============== -->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">General/Finance Manager Assistant</h3>
-                                <span class="qualification__subtitle">Street Feast, Rushmore Group (UK)</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2014 - 2015
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ============== QUALIFICATION 5 ============== -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">General Manager</h3>
-                                <span class="qualification__subtitle"> Rotary Bar Diner, Rushmore Group (UK)</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2013 - 2014
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!-- ============== QUALIFICATION 4 ============== -->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">General Manager Assistant</h3>
-                                <span class="qualification__subtitle">The Redhook, Rushmore Group (UK)</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2010 - 2013
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ============== QUALIFICATION 3 ============== -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Head Waiter</h3>
-                                <span class="qualification__subtitle">The Chancery (UK)</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2009 - 2010
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                        </div>
-
-                        <!-- ============== QUALIFICATION 2 ============== -->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">Store Manager</h3>
-                                <span class="qualification__subtitle">Regate Takats (LV)</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2008 - 2009
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ============== QUALIFICATION 1 ============== -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Warehouse Administrator</h3>
-                                <span class="qualification__subtitle">Kuehne+Nagel Latvia (LV)</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2006 - 2008
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
                             </div>
                         </div>
                     </div>
@@ -611,7 +533,7 @@
         <!-- ==================== PORTFOLIO ==================== -->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work</span>
+            <span class="section__subtitle">Work from Code Institute</span>
 
             <div class="portfolio__container container swiper">
                 <div class="swiper-wrapper">
@@ -619,10 +541,12 @@
                     <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/portfolio4.png" class="portfolio__img" alt="portfolio__preview">
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">PizzaTIme</h3>
+                            <h3 class="portfolio__title">PizzaTime</h3>
                             <p class="portfolio__description">Responsive Django web app. Used HTML,
-                                CSS, JS(jQuery). Implemented emailJS and Google Maps API's. Fully functioning authentication, payment system, order history, product management and more.
-                                MySQL as local database and Heroku Postgres as remote. AWS S3 as media and static file storage.</p>
+                                CSS, JS(jQuery). Implemented emailJS and Google Maps API's. Fully functioning
+                                authentication, payment system, order history, product management and more.
+                                MySQL as local database and Heroku Postgres as remote. AWS S3 as media and static file
+                                storage.</p>
                             <div class="portfolio__buttons">
                                 <a href="https://pizza-time-ms4-po.herokuapp.com/" target="_blank"
                                     rel="noopener noreferrer nofollow" class="button button--flex button--small">
@@ -682,7 +606,7 @@
                         <img src="assets/img/portfolio2.png" class="portfolio__img" alt="portfolio__preview">
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Mister Softee Icecream</h3>
-                            <p class="portfolio__description">Responsive website created with HTML,
+                            <p class="portfolio__description">My very first responsive website created with HTML,
                                 CSS and Bootstrap 5.</p>
                             <div class="portfolio__buttons">
                                 <a href="https://pjotrs-osnovskis.github.io/mr-softee-ms1/" target="_blank"
@@ -767,7 +691,7 @@
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">Pjotrs Osnovskis</h1>
-                    <span class="footer__subtitle">Full Stack Developer</span>
+                    <span class="footer__subtitle">Jr Full Stack Web Developer</span>
                 </div>
                 <ul class="footer__links">
                     <li>
@@ -796,7 +720,7 @@
                     </a>
                 </div>
             </div>
-            <p class="footer__copy">&#169; Pjotrs Osnovskis. All rights reserved.</p>
+            <p class="footer__copy">&#169; Pjotrs Osnovskis. All rights reserved. 2022</p>
         </div>
     </footer>
     <!-- SCROLL TOP -->
